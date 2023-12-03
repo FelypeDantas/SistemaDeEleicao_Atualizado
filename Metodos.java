@@ -31,31 +31,28 @@ public class Metodos {
 	}
 
 	private int secao(Votacao[] votacao1, Votacao[] votacao2, Cadastro_Eleitor[] eleitor) {
-		int i, opc = 0;
-		for(i=0; i<10; i++) {
-			
+		int c, opc = 0;
 			
 			 opc = Integer.parseInt(JOptionPane.showInputDialog("Digite entre: \n 1 , 3 , 4 \n 5 , 9 , 10 \n 2 - Finaliza"));
 			 
 			switch(opc) {
-			case 1: eleitor[i].secao = 1;
+			case 1: c = 1;
 			        break;
-			case 3: eleitor[i].secao = 3;
+			case 3: c = 3;
 			        break;
-			case 4: eleitor[i].secao = 4;
+			case 4: c = 4;
 			        break;
-			case 5: eleitor[i].secao = 5;
+			case 5: c = 5;
 			        break;
-			case 9: eleitor[i].secao = 9;
+			case 9: c = 9;
 			        break;
-			case 10: eleitor[i].secao = 10;
+			case 10: c = 10;
 			        break;
 			case 2: JOptionPane.showMessageDialog(null, "Finaliza Programa");
 			        break;
 			default: JOptionPane.showMessageDialog(null, "Opção Inválida");
-		  }
 		}
-		return 0;
+		return c;
 	}
 
 	public void CadastraVotacao() {
